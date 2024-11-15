@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    letter-spacing: .05em;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(10, 20, 30);
+    color: rgb(235, 245, 255);
+}
+
+.calcBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 25px;
+    background: rgb(30, 40, 50);
+}
+
+.header {
+    padding: 5px 10px;
+    margin: 10px 10px 10px 10px;
+    font-size: 1.5rem;
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 230px;
+    background-color: rgb(235, 245, 255);
+    color: rgb(0, 10, 20);
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    border-style: solid;
+    border-radius: 7px;
+    border-width: 1px;
+    border-color: rgb(100, 110, 120);
+}
+
+input::placeholder {
+    color: rgb(150, 160, 170);
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+/* Tira as setas do input number */
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+
+/* Tira as setas do input number */
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+/* Tira a outline do input */
+input:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 20px 25px 20px;
+}
+
+.buttonsLine1,
+.buttonsLine2,
+.buttonsLine3,
+.buttonsLine4,
+.buttonsLine5 {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    width: 50px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(235, 245, 255);
+    transition: all 0.1s ease;
+    box-shadow: rgb(130, 140, 150) 0px 5px 0px 0px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: rgb(10, 20, 30);
+    cursor: pointer;
+}
+
+.zero {
+    width: 110px;
+}
+
+button:hover {
+    box-shadow: rgb(130, 140, 150) 0px 4px 0px 0px;
+    transform: translateY(1px)
+}
+
+button:active {
+    box-shadow: rgb(130, 140, 150) 0px 0px 0px 0px;
+    transform: translateY(5px);
+    transition: 100ms;
+}
